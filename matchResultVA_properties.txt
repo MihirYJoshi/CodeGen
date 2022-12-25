@@ -1,0 +1,19 @@
+-- MatchResultVA tournamentName matchNumber
+// Create properties for match results from Code Orange Video Analysis
+tournamentName VARCHAR(100) NOT NULL
+matchNumber VARCHAR(10) NOT NULL
+matchType VARCHAR(10) NOT NULL
+blue1_teamNumber VARCHAR(10) NOT NULL
+blue2_teamNumber VARCHAR(10) NOT NULL
+blue3_teamNumber VARCHAR(10) NOT NULL
+red1_teamNumber VARCHAR(10) NOT NULL
+red2_teamNumber VARCHAR(10) NOT NULL
+red3_teamNumber VARCHAR(10) NOT NULL
+
+// Data captured from video analysis of the match (near future)
+blue1_headmap VARCHAR(1000) NULL
+blue2_headmap VARCHAR(1000) NULL
+blue3_headmap VARCHAR(1000) NULL
+red1_headmap VARCHAR(1000) NULL
+red2_headmap VARCHAR(1000) NULL
+red3_headmap VARCHAR(1000) NULL

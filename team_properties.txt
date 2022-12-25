@@ -1,0 +1,7 @@
+-- Team teamNumber
+// Create properties for teams
+teamNumber VARCHAR(10) NOT NULL
+teamName VARCHAR(100) NOT NULL
+teamCountry VARCHAR(100) NOT NULL
+teamState VARCHAR(100) NOT NULL
+teamCity VARCHAR(100) NOT NULL

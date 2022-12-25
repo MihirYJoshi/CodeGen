@@ -1,0 +1,10 @@
+-- Robot teamNumber
+// Create properties for robots
+teamNumber VARCHAR(10) NOT NULL
+numBatteries INT NOT NULL
+chargedBatteries INT NOT NULL
+codeLanguage VARCHAR(20) NOT NULL
+climbLevel INT NOT NULL
+falconLoctite VARCHAR(100) NOT NULL
+autoPath LONGTEXT NOT NULL
+comments LONGTEXT NOT NULL

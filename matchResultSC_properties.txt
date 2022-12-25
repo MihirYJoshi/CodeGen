@@ -1,0 +1,49 @@
+-- MatchResultSC tournamentName matchNumber
+// Create properties for match results from Code Orange Scouters
+tournamentName VARCHAR(100) NOT NULL
+matchNumber VARCHAR(10) NOT NULL
+matchType VARCHAR(10) NOT NULL
+blue1_teamNumber VARCHAR(10) NOT NULL
+blue2_teamNumber VARCHAR(10) NOT NULL
+blue3_teamNumber VARCHAR(10) NOT NULL
+red1_teamNumber VARCHAR(10) NOT NULL
+red2_teamNumber VARCHAR(10) NOT NULL
+red3_teamNumber VARCHAR(10) NOT NULL
+
+// Data aggregated from match detail table (which is populated by the match scouters)
+blue1_upper_auto VARCHAR(10) NULL
+blue2_upper_auto VARCHAR(10) NULL
+blue3_upper_auto VARCHAR(10) NULL
+red1_uper_auto VARCHAR(10) NULL
+red2_upper_auto VARCHAR(10) NULL
+red3_upper_auto VARCHAR(10) NULL
+blue1_lower_auto VARCHAR(10) NULL
+blue2_lower_auto VARCHAR(10) NULL
+blue3_lower_auto VARCHAR(10) NULL
+red1_lower_auto VARCHAR(10) NULL
+red2_lower_auto VARCHAR(10) NULL
+red3_lower_auto VARCHAR(10) NULL
+blue1_upper_teleop VARCHAR(10) NULL
+blue2_upper_teleop VARCHAR(10) NULL
+blue3_upper_teleop VARCHAR(10) NULL
+red1_uper_teleop VARCHAR(10) NULL
+red2_upper_teleop VARCHAR(10) NULL
+red3_upper_teleop VARCHAR(10) NULL
+blue1_lower_teleop VARCHAR(10) NULL
+blue2_lower_teleop VARCHAR(10) NULL
+blue3_lower_teleop VARCHAR(10) NULL
+red1_lower_teleop VARCHAR(10) NULL
+red2_lower_teleop VARCHAR(10) NULL
+red3_lower_teleop VARCHAR(10) NULL
+blue1_climb VARCHAR(10) NULL
+blue2_climb VARCHAR(10) NULL
+blue3_climb VARCHAR(10) NULL
+red1_climb VARCHAR(10) NULL
+red2_climb VARCHAR(10) NULL
+red3_climb VARCHAR(10) NULL
+blue1_defense_score VARCHAR(10) NULL
+blue2_defense_score VARCHAR(10) NULL
+blue3_defense_score VARCHAR(10) NULL
+red1_defense_score VARCHAR(10) NULL
+red2_defense_score VARCHAR(10) NULL
+red3_defense_score VARCHAR(10) NULL

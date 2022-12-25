@@ -1,0 +1,50 @@
+-- MatchResultBA tournamentName matchNumber matchType
+// Create properties for match results from blue alliance
+tournamentName VARCHAR(100) NOT NULL
+matchNumber VARCHAR(10) NOT NULL
+matchType VARCHAR(100) NOT NULL
+blue1_teamNumber VARCHAR(10) NOT NULL
+blue2_teamNumber VARCHAR(10) NOT NULL
+blue3_teamNumber VARCHAR(10) NOT NULL
+red1_teamNumber VARCHAR(10) NOT NULL
+red2_teamNumber VARCHAR(10) NOT NULL
+red3_teamNumber VARCHAR(10) NOT NULL
+
+// Data collected from theblueAlliance.com via API/Screen Scraping
+blue1_taxi VARCHAR(10) NULL
+blue2_taxi VARCHAR(10) NULL
+blue3_taxi VARCHAR(10) NULL
+red1_taxi VARCHAR(10) NULL
+red2_taxi VARCHAR(10) NULL
+red3_taxi VARCHAR(10) NULL
+blue_auto_lower VARCHAR(10) NULL
+blue_auto_upper VARCHAR(10) NULL
+red_auto_lower VARCHAR(10) NULL
+red_auto_upper VARCHAR(10) NULL
+blue_total_auto VARCHAR(10) NULL
+red_total_auto VARCHAR(10) NULL
+blue_teleop_lower VARCHAR(10) NULL
+blue_teleop_upper VARCHAR(10) NULL
+red_teleop_lower VARCHAR(10) NULL
+red_teleop_upper VARCHAR(10) NULL
+blue_total_teleop VARCHAR(10) NULL
+red_total_teleop VARCHAR(10) NULL
+blue_cargo_bonus VARCHAR(10) NULL
+red_cargo_bonus VARCHAR(10) NULL
+blue1_end_game VARCHAR(10) NULL
+blue2_end_game VARCHAR(10) NULL
+blue3_end_game VARCHAR(10) NULL
+red1_end_game VARCHAR(10) NULL
+red2_end_game VARCHAR(10) NULL
+red3_end_game VARCHAR(10) NULL
+blue_hanger_points VARCHAR(10) NULL
+red_hanger_points VARCHAR(10) NULL
+blue_hangar_bonus VARCHAR(10) NULL
+red_hangar_bonus VARCHAR(10) NULL
+blue_fouls VARCHAR(10) NULL
+red_fouls VARCHAR(10) NULL
+blue_total_score VARCHAR(10) NULL
+red_total_score VARCHAR(10) NULL
+blue_ranking_points VARCHAR(10) NULL
+red_ranking_points VARCHAR(10) NULL
+winning_alliance VARCHAR(10) NULL

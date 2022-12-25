@@ -1,0 +1,30 @@
+-- MatchScoutingDetails tournamentName matchNumber teamNumber allianceColor | scouterName eventTime
+// Match scouting identifiers
+tournamentName VARCHAR(100) NOT NULL
+matchNumber VARCHAR(10) NOT NULL
+scouterName VARCHAR(100) NOT NULL
+teamNumber VARCHAR(10) NOT NULL
+allianceColor VARCHAR(10) NOT NULL
+eventTime VARCHAR(100) NOT NULL
+
+// Auto properties
+exit_tarmac BOOLEAN NOT NULL
+auto_path LONGTEXT NOT NULL
+auto_upper_goal INT NOT NULL
+auto_upper_goal_miss INT NOT NULL
+auto_lower_goal INT NOT NULL
+auto_lower_goal_miss INT NOT NULL
+
+// Teleop properties
+shot_location LONGTEXT NOT NULL
+teleop_upper_goal INT NOT NULL
+teleop_upper_goal_miss INT NOT NULL
+teleop_lower_goal INT NOT NULL
+teleop_lower_goal_miss INT NOT NULL
+climb INT NOT NULL
+penalties VARCHAR(10) NOT NULL
+issues VARCHAR(100) NOT NULL
+dnp INT NOT NULL
+defense INT NOT NULL
+defComments VARCHAR(1000) NOT NULL
+comments VARCHAR(1000) NOT NULL
