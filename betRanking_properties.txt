@@ -1,0 +1,49 @@
+-- Bet userName matchNumber
+// Create properties for robots
+userName VARCHAR(30) NOT NULL
+tournament VARCHAR(20) NOT NULL
+matchType VARCHAR(20) NOT NULL
+matchNumber VARCHAR(20) NOT NULL
+timeStamp VARCHAR(20) NOT NULL
+redAutoPredict VARCHAR(20) NOT NULL
+blueAutoPredict VARCHAR(20) NOT NULL
+climbWinner VARCHAR(20) NOT NULL
+winner VARCHAR(20) NOT NULL
+margin VARCHAR(10) NOT NULL
+
+-- Code
+	public function readByName($userName) {
+		global $betTable;
+		$queryString = "SELECT * FROM `" . $betTable . "` WHERE userName = '" . $userName . "'";
+		try {
+			$result = DataBase::runQuery($queryString);
+		} catch (PDOException $e) {
+			if ($e->getCode() == "42S02") {
+				error_log("CREATING TABLES");
+				self::createBetTable();
+			}
+			$result = DataBase::runQuery($queryString);
+		}
+		return $result;
+	}
+
+	public function getUserList() {
+		global $betTable;
+		$queryString = "SELECT `userName` FROM `" . $betTable . "`";
+		try {
+			$result = DataBase::runQuery($queryString);
+		} catch (PDOException $e) {
+			if ($e->getCode() == "42S02") {
+				error_log("CREATING TABLES");
+				self::createMatchResultBATable();
+			}
+			$result = DataBase::runQuery($queryString);
+		}
+		$users = array();
+		foreach ($result as $row_key => $row) {
+			if (!in_array($row["userName"], $users)) {
+				array_push($users, $row["userName"]);
+			}
+		}
+		return ($users);
+	}

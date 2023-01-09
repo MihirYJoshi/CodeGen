@@ -1,0 +1,9 @@
+-- LeadScout matchNumber
+// Create properties for robots
+matchNumber VARCHAR(25) NOT NULL
+team1 VARCHAR(10) NOT NULL
+team2 VARCHAR(10) NOT NULL
+team3 VARCHAR(10) NOT NULL
+team4 VARCHAR(10) NOT NULL
+team5 VARCHAR(10) NOT NULL
+team6 VARCHAR(10) NOT NULL

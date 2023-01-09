@@ -1,6 +1,7 @@
 -- Robot teamNumber
 // Create properties for robots
 teamNumber VARCHAR(10) NOT NULL
+teamName VARCHAR(50) NOT NULL
 numBatteries INT NOT NULL
 chargedBatteries INT NOT NULL
 codeLanguage VARCHAR(20) NOT NULL

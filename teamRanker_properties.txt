@@ -1,0 +1,4 @@
+-- teamRanker teamNumber
+// Create properties for teamRanker
+score VARCHAR(10) NOT NULL
+teamNumber VARCHAR(10) NOT NULL

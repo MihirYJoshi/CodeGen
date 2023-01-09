@@ -1,4 +1,4 @@
--- MatchResultBA tournamentName matchNumber matchType
+-- MatchResultBA matchNumber matchType
 // Create properties for match results from blue alliance
 tournamentName VARCHAR(100) NOT NULL
 matchNumber VARCHAR(10) NOT NULL
